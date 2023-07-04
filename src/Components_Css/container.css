@@ -1,0 +1,20 @@
+.cardLogin{
+    width: 30rem;
+    padding: 2rem;
+    margin: auto;
+    height: 28rem;
+    background-color:transparent;
+}
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #181181, rgb(10, 9, 73));
+}
+.appContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    color: white;
+}
