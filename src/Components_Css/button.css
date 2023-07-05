@@ -1,6 +1,14 @@
 .botonCrearUsuario {
     background-color: #00c400;
     display: flex;
-    margin-top: 2rem !important;
+    margin-top: 1rem !important;
     padding: auto;
+}
+.btnLoginGoogle{
+    margin: auto;
+    display: flex;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius:1rem ;
+    border-top-right-radius:1rem ;
 }

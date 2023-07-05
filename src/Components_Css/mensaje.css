@@ -1,0 +1,7 @@
+.cajaMensaje{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

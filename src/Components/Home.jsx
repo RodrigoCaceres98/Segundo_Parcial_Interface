@@ -1,14 +1,22 @@
 import React, { useContext, useState } from 'react'
 import { useAuth } from '../context/authContext'
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
-    
-    const {user} = useAuth();
+
+    const { user, logaut, loading } = useAuth();
+    const navigate = useNavigate()
 
     console.log(user)
 
     const [api, setApi] = useState("")
 
+    const handleLogaut = async () => {
+        await logaut();
+        // navigate("/Login")
+    }
+
+    if(loading) return <h1>Loading</h1>
 
     // useEffect(() => {
     //     fetch("https://www.omdbapi.com/?apikey=ee927cef&s=harry")
@@ -31,6 +39,12 @@ export const Home = () => {
     // }, [api])
 
     return (
-        <div>Home</div>
+        <div>
+            <div>
+                <h1 className='text-dark'>Bienvenido {user.email}</h1>
+            </div>
+            <button onClick={() => handleLogaut()}>Cerrar Sesion</button>
+        </div>
+
     )
 }
