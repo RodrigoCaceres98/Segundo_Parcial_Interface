@@ -1,7 +1,13 @@
+/* login / register */
 .colorConfirmacion {
     color: rgb(178, 177, 207);
 }
 
 .colorError {
     color: red;
+}
+
+/* header */
+.title {
+    color: rgb(90 138 200);
 }

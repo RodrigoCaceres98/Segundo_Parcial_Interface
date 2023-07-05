@@ -4,6 +4,7 @@
 @import "./img.css";
 @import "./text.css";
 @import "./mensaje.css";
+@import "./input.css";
 
 body{
     width: 100vw;

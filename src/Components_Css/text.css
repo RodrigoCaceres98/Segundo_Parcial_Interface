@@ -1,0 +1,10 @@
+.custom-list {
+    list-style-type: none;
+    /* Elimina los puntos predeterminados */
+    padding: 0;
+}
+
+.titleMaratonPeliculas {
+    font-family: initial;
+    margin: 0;
+}

@@ -12,3 +12,14 @@
     border-bottom-right-radius:1rem ;
     border-top-right-radius:1rem ;
 }
+
+/* nuevo agrregado */
+.seccionDeBotones button{
+    margin-left: 2rem;
+    color: white;
+}
+.logaut{
+    width: 8rem !important;
+    height: 2.5rem;
+    overflow: hidden;
+}
