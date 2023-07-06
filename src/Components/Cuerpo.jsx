@@ -40,7 +40,7 @@ export const Cuerpo = () => {
 
     return (
         <div className=' p-3 mx-4'>
-            <div>
+            <div className='cajaContenido'>
                 <h2 className='titleMaratonPeliculas'>Para maratonear con Harry Potter</h2>
                 <div className='cajaPeliculas'>
                     {harry?.map(pelicula => {

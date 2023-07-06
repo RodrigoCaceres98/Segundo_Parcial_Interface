@@ -19,8 +19,10 @@
     color: white;
 }
 .logaut{
-    width: 8rem !important;
+    width: 9rem;
     height: 2.5rem;
     overflow: hidden;
-    min-width: 8rem;
+    display: flex;
+    margin-top:0.8rem ;
+    /* min-width: 80px; */
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useAuth } from '../context/authContext'
+import IconLogout from "../img/iconLogout.png"
 
 export const Header = ({ setFiltro, filtro }) => {
 
@@ -38,10 +39,9 @@ export const Header = ({ setFiltro, filtro }) => {
   return (
     // <div className='headerContainer'>
     <nav className="navbar  bg-dark d-flex justify-content-between ">
-      <div>
-        <div className='d-flex'>
-          <h3 className='mb-0 ms-2 title '>Todo Peliculas</h3>
-          {/* <div className='seccionDeBotones'>
+      {/* <div className='d-flex'> */}
+        <h3 className='mb-0 ms-2 title '>Todo Peliculas</h3>
+        {/* <div className='seccionDeBotones'>
           <button className='btn'>
             Home
           </button>
@@ -52,32 +52,34 @@ export const Header = ({ setFiltro, filtro }) => {
             Categorias
           </button>
         </div> */}
+      {/* </div> */}
+
+      <div className="hedearRight">
+        <div className=' d-flex '>
+          <input id='inputBusqueda' onChange={(e) => setFiltro(e.target.value)} list='listaPeliculas' autoComplete='off' className="form-control inputBuscar" type="search" placeholder="Buscar" aria-label="Search" />
+          {/* funcion que muestra las peliculas que buscamos mediante el buscador*/}
+          {
+            listaDePeliculas &&
+            <datalist id='listaPeliculas'>
+              {
+                listaDePeliculas?.map((pelicula) => {
+                  return <option
+                    key={pelicula.imdbID}>
+                    {pelicula.Title}
+                    {console.log(pelicula.Title)}
+                  </option>
+                  // console.log(pelicula)
+                })
+              }
+            </datalist>
+          }
         </div>
 
-        <div className="hedearRight">
-          <div className=' d-flex '>
-            <input onChange={(e) => setFiltro(e.target.value)} list='listaPeliculas' autoComplete='off' className="form-control inputBuscar" type="search" placeholder="Buscar" aria-label="Search" />
-            {/* funcion que muestra las peliculas que buscamos mediante el buscador*/}
-            {
-              listaDePeliculas &&
-              <datalist id='listaPeliculas'>
-                {
-                  listaDePeliculas?.map((pelicula) => {
-                    return <option
-                      key={pelicula.imdbID}>
-                      {pelicula.Title}
-                      {console.log(pelicula.Title)}
-                    </option>
-                    // console.log(pelicula)
-                  })
-                }
-              </datalist>
-            }
-          </div>
+        <button className='btn btn-outline-danger logaut' onClick={() => handleLogaut()}>
+          <img src={IconLogout} alt="" />
+          <p id='parrafoLogout' >CerrarSesion </p>
+        </button>
 
-          <button className='btn btn-outline-danger logaut' onClick={() => handleLogaut()}>Cerrar Sesion</button>
-
-        </div>
       </div>
 
       {/* </div> */}

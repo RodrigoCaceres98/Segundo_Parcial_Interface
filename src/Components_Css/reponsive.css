@@ -1,5 +1,106 @@
+@media only screen and (max-width: 1300px) {
+    .homeContainer {
+        margin: 0;
+    }
+    .cajaPeliculas {
+        flex-wrap: wrap;   
+    }
+
+    /* .headerRight {
+        margin-right: 5rem;
+        /* position: absolute;
+    } */
+    .nav {
+        justify-content: space-around !important;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .loginContainer{
+        width: auto;
+        min-height: 100%;
+    }
+
+}
 
 
-@media only screen and (max-width: 1220) {
-    
+@media only screen and (max-width: 687px) {
+    .cajaPeliculas {
+        justify-content: center;  
+    }
+    .titleMaratonPeliculas{
+        margin: auto;
+    }
+    .cajaContenido{
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+/* TABLET */
+
+@media only screen and (max-width: 630px) {
+
+    #inputBusqueda {
+        display: none;
+    }
+
+    .headerRight {
+        width: auto!important;
+    }
+
+}
+
+/* SMART PHONE */
+
+@media only screen and (max-width: 430px) {
+
+    .nav {
+        position: relative;
+    }
+
+    .logaut {
+        position: absolute;
+        margin-top: 0.8rem;
+        min-width: none;
+        width: 3rem !important;
+
+    }
+
+    #parrafoLogout {
+        display: none;
+    }
+
+    .headerRight {
+        position: relative;
+    }
+
+    .cajaPeliculas {
+        display: block;   
+    }
+
+    .cajaPeliculas div {
+        margin: auto;
+    }
+
+    .titleMaratonPeliculas {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    .loginContainer{
+        min-height: 130vh;
+    }
+    .cardLogin{
+        width: auto ;
+        top: 5;
+        margin: 2rem;
+    }
+    .cardRegister{
+        width: auto;
+    }
+    .colorDeVolverALogin{
+        display: flex;
+        justify-content: center;
+    }
 }
