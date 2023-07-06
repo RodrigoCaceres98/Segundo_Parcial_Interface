@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const Pelicula = ({ pelicula }) => {
+  // console.log(pelicula)
   return (
     <div className="card cardPeliculas" style={{ width: '18rem' }}>
       <img className="tamañoDeImgPeliculas" src={pelicula.Poster} alt="Card image cap" />

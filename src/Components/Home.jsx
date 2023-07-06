@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useAuth } from '../context/authContext';
 import { useNavigate } from 'react-router-dom';
 import { Header } from './Header';
@@ -8,17 +8,24 @@ import { Cuerpo } from './Cuerpo';
 export const Home = () => {
 
     const { user, loading } = useAuth();
-    const navigate = useNavigate()
+    const [filtro, setFiltro] = useState("")
+    // const navigate = useNavigate()
+    // // const [render, setrender] = useState(false)
+    // // useEffect(() => {
+    // //     setrender(!render)
+    // // }, [])
+
+    // console.log(user)
 
     if (loading) return <h1>Loading</h1>
 
     return (
         <div className='homeContainer'>
             <div>
-                <Header />
+                <Header setFiltro={setFiltro} filtro={filtro} />
             </div>
             <div>
-                <Cuerpo />
+                <Cuerpo filtro={filtro} />
             </div>
             {/* <div>
                 <Footer/>

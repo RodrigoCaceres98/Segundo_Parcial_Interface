@@ -15,6 +15,8 @@ export const Login = () => {
     contraseña: ""
   })
 
+  // console.log(user)
+
   // hanbleChange: funcion que utlizamos para poder tomar los valores correo y contraseña para poder hacer la autenticacion
   const hanbleChange = ({ target: { name, value } }) => {
     setCredenciales({ ...credenciales, [name]: value })

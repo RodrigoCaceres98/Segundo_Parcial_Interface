@@ -22,4 +22,5 @@
     width: 8rem !important;
     height: 2.5rem;
     overflow: hidden;
+    min-width: 8rem;
 }

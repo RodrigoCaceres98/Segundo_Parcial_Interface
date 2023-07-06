@@ -1,4 +1,6 @@
 .inputBuscar{
     width: 15rem;
-    height: 2.5rem;
+    height: 2rem;
+    align-self: center;
+    margin-right: 2rem;
 }
