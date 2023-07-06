@@ -4,25 +4,34 @@
     margin-top: 1rem !important;
     padding: auto;
 }
-.btnLoginGoogle{
+
+.btnLoginGoogle {
     margin: auto;
     display: flex;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    border-bottom-right-radius:1rem ;
-    border-top-right-radius:1rem ;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 /* nuevo agrregado */
-.seccionDeBotones button{
+.seccionDeBotones button {
     margin-left: 2rem;
     color: white;
 }
-.logaut{
+
+.logaut {
     width: 9rem;
     height: 2.5rem;
     overflow: hidden;
     display: flex;
-    margin-top:0.8rem ;
+    margin-top: 0.8rem;
     /* min-width: 80px; */
+}
+
+.btnVolverALogin {
+    width: 9rem !important;
+    height: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
 }

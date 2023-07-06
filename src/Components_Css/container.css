@@ -10,15 +10,16 @@
     width: 30rem;
     padding: 2rem;
     margin: auto;
-    height: 28rem;
+    height: 32rem;
     background-color: #0d0947a3;
 }
 
 .loginContainer {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: fit-content;
+    width: 100%;
     background: linear-gradient(to right, #181181, rgb(10, 9, 73));
 }
 

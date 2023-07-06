@@ -73,8 +73,10 @@ export const Register = () => {
               onChange={hanbleChange} />
           </div>
           <button type="submit" className="btn btn-primary w-100">Ingresar</button>
-          <div className='lineaDivision'/>
-          <button type="submit" className="btnLoginGoogle w-75 mt-3 btnVolverALogin"><p className='m-0  colorDeVolverALogin text-center'>Iniciar Sesion</p></button>
+          <div className='lineaDivision' />
+          <button onClick={() => navigate("/Login") } type="submit" className="btnLoginGoogle w-75 mt-3 btnVolverALogin">
+            <p className='m-0  parrafoDeVolverALogin text-center'>Iniciar Sesion</p>
+          </button>
         </form>
         {/* Fin de formulario */}
       </div>
